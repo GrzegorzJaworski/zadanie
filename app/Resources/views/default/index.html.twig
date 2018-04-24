@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(form) }}
+
+    {{ form_errors(form) }}
+    {{ form_row(form.main) }}
+    <span>URL do porównania:</span>
+<table class="table js-url-wrapper"
+     data-prototype="{% filter escape %}{{ include('default/prototype.html.twig', { 'form': form.urls.vars.prototype }) }}{% endfilter %}"
+     data-index="{{ form.urls|length }}"
+>
+    <tbody>
+    {% for urlForm in form.urls %}
+        <tr class="js-url-row">
+            <td>{{ form_errors(urlForm) }}{{ form_row(urlForm) }}</td>
+            <td>
+                <button class="btn btn-link js-remove-url pull-right">
+                    <span class="fas fa-window-close"></span>
+                </button>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>
+            <button class="btn btn-outline-primary js-url-add">
+                <span class="fa fa-plus-circle"></span>
+                Add URL
+            </button>
+        </td>
+    </tr>
+    </tfoot>
+</table>
+    {{ form_end(form) }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        var $wrapper = $('.js-url-wrapper');
+
+        function addRemoveRow(){
+            $('.js-remove-url').click(function (e) {
+                e.preventDefault()
+                $(this).closest('tr').remove();
+            });
+
+        }
+
+        $wrapper.on('click', '.js-url-add', function(e) {
+            e.preventDefault();
+            // Get the data-prototype explained earlier
+            var prototype = $wrapper.data('prototype');
+            // get the new index
+            var index = $wrapper.data('index');
+            // Replace '__name__' in the prototype's HTML to
+            // instead be a number based on how many items we have
+            var newForm = prototype.replace(/__name__/g, index);
+            // increase the index with one for the next item
+            $wrapper.data('index', index + 1);
+            // Display the form in the page before the "new" link
+            // $(this).before(newForm);
+            $('tbody').append(newForm);
+            addRemoveRow()
+
+        });
+    </script>
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}

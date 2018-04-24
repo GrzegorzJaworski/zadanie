@@ -1,0 +1,9 @@
+22:37:53 24-04-2018 - https://www.google.pl: 534, https://www.google.pl: 980: -446, https://www.google.pl: 0: Błąd pomiaru22:40:37 24-04-2018 - https://www.google.pl: 534, https://www.google.pl: 980: -446, https://www.google.pl: 0: Błąd pomiaru
+22:42:45 24-04-2018 - https://www.google.pl: 534, https://www.google.pl: 980: -446, https://www.google.pl: 0: Błąd pomiaru
+22:44:03 24-04-2018 - https://www.google.pl: 534, https://www.google.pl: 980: -446, https://www.google.pl: 0: Błąd pomiaru
+22:47:55 24-04-2018 - https://www.google.pl: 534, https://www.onet.pl/: 980: -446, http://opiekanadzwierzetami.com: 0: Błąd pomiaru
+22:48:54 24-04-2018 - https://www.onet.pl/: 980, https://www.google.pl: 534: 446, http://opiekanadzwierzetami.com: 0: Błąd pomiaru
+22:51:22 24-04-2018 - https://www.onet.pl/: 980, https://www.google.pl: 534: 446, http://opiekanadzwierzetami.com: 0: Błąd pomiaru
+22:54:28 24-04-2018 - https://www.onet.pl/: 980, https://www.google.pl: 534: 446, http://opiekanadzwierzetami.com: 0: Błąd pomiaru
+22:56:08 24-04-2018 - https://www.onet.pl/: 980, https://www.google.pl: 534: 446, http://opiekanadzwierzetami.com: 0: Błąd pomiaru
+22:57:57 24-04-2018 - https://www.onet.pl/: 980, https://www.google.pl: 534: 446, http://opiekanadzwierzetami.com: 0: Błąd pomiaru
